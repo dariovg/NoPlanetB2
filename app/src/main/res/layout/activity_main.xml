@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".BMain">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/imfondomain"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/planetearth" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imco"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/rocketlogo"
+            app:civ_border_color="#EEEEEE"
+            app:civ_border_width="0dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <View
+            android:id="@+id/vistascrim"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/scrim" />
+
+        <TextView
+            android:id="@+id/tvmainfondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="And no next generation"
+            android:textColor="@color/blanco"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_texto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_texto"
+                    android:layout_width="360dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/descripcion"
+                    android:textSize="15sp" />
+
+
+
+            </ScrollView>
+
+
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnder"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/btnder"
+            android:textColor="@color/blanco" />
+
+        <Button
+            android:id="@+id/btnizq"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/b_button"
+            android:text="@string/btnizq"
+            android:textColor="#216FED" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BSplash"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/planetearth"
+    >
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imco"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="242dp"
+        android:src="@drawable/rocketlogo"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="0dp" />
+
+    <TextView
+        android:id="@+id/tvtitsplash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulosplash"
+        android:gravity="center"
+        android:fontFamily="@font/bromello"
+        android:textSize="69dp"
+        android:textColor="@color/blanco"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/titulopequenosplash"
+        android:textColor="@color/blanco"
+        android:textSize="20dp" />
+</LinearLayout>
